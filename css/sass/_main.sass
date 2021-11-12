@@ -1,0 +1,146 @@
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    outline: none
+
+body
+    font-family: $fontBody
+    color: #FFF
+    background-image: url('../images/bg-desktop.svg')
+    background-color: $primColor
+    display: flex
+    flex-direction: column
+    width: 100%
+    min-height: 100vh
+
+
+    @media(max-width: 500px)
+        background-image: url('../images/bg-mobile.svg')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: top
+        
+
+a
+    text-decoration: none
+    color: inherit
+    transition: all ease-in-out .15s
+    &:hover
+        color: $secColor
+
+.container
+    padding: 0 3rem 
+    margin-top: 3rem
+    width: 100%
+
+header
+    .logo
+        text-transform: capitalize
+        font-weight: bold
+        font-size: 40px
+        font-family: $fontHeading
+        display: flex
+        align-items: center
+        @media(max-width: 500px)
+            font-size: 30px
+
+        p
+            padding-left: .5rem
+
+main
+    flex-grow: 1
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+
+    @media (max-width: 850px)
+        flex-direction: column
+        text-align: center
+
+
+    img
+        width: 100%
+
+
+    .text-content
+        width: 40%
+        padding-top: 3rem
+        padding-left: 2rem
+        @media (max-width: 850px)
+            width: 100%
+            text-align: center
+            padding-left: 0
+
+        h1
+            padding-bottom: 1.5rem
+            width: 80%
+
+            @media (max-width: 850px)
+                width: 100%
+
+        p
+            width: 98%
+            line-height: 1.5rem
+            padding-bottom: 1.5rem
+
+        button
+            background-color: #fff
+            padding: 1rem 4rem
+            border-radius: 2rem
+            border: none
+            color: $primColor
+            font-family: inherit
+            font-size: inherit
+            cursor: pointer
+            box-shadow: 1px 0px 7px #0006
+            transition: all ease-in-out .15s
+
+            @media (max-width: 850px)
+                padding: 1rem 5rem
+
+            &:hover
+                background-color: $secColor
+                color: #fff
+
+
+footer
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 1rem
+
+    @media (max-width: 850px)
+        flex-direction: column-reverse
+        align-items: center
+        text-align: center
+
+    .social-icons
+        a
+            border: 2px solid #fff
+            display: block
+            float: left
+            width: 36px
+            height: 36px
+            border-radius: 20px
+            margin-right: 1rem
+            transition: all ease-in-out .15s
+            @media (max-width: 850px)
+                margin-bottom: 2rem
+
+            &:hover
+                color: $secColor
+                border-color: $secColor
+
+            .facebook
+                padding: 8px 9px
+
+            .twitter
+                padding: 9px 7px
+
+            .instagram
+                padding: 8px 7px
+
+
+                                
