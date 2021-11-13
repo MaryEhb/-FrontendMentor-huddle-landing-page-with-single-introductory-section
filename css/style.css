@@ -11,6 +11,7 @@ body {
   color: #FFF;
   background-image: url("../images/bg-desktop.svg");
   background-color: #674baf;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,13 +117,13 @@ main .text-content {
 
 main .text-content h1 {
   padding-bottom: 1.5rem;
-  width: 80%;
-  Font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 850px) {
   main .text-content h1 {
-    width: 100%;
+    font-size: 2rem;
   }
 }
 
